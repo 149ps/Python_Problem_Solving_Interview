@@ -70,8 +70,11 @@ lst1.append(3)
 lst1.append(5)
 lst1.append(7)
 lst1.display()
+print(lst1.length())
+
 lst1.deleteNode(2)
 lst1.display()
+
 
 
 
