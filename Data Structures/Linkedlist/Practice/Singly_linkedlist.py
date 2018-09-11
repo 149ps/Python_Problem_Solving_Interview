@@ -13,7 +13,7 @@ class linked_list:
         while (cur_node.next!=None):
             cur_node=cur_node.next
         cur_node.next=new_node
-    
+     
     def length(self):
         cur_node=self.head
         count=0

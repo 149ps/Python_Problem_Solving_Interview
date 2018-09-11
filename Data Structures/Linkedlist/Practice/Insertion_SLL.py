@@ -12,7 +12,7 @@ class linked_list:
         cur_node=self.head
         if not cur_node.next==None:
             new_node.next=cur_node.next
-        cur_node.next=new_node
+        cur_node.next=new_node 
     
     
     def append(self,data):
@@ -45,7 +45,17 @@ class linked_list:
             cur_node=cur_node.next
             elements.append(cur_node.data)
         print(elements)    
-        
+    
+    def get(self,index):
+        if index>=self.length():
+            return None
+        cur_index=0
+        cur_node=self.head
+        while True:
+            cur_node=cur_node.next
+            if cur_index==index:
+                return cur_node.data
+            cur_index+=1
         
     
 
