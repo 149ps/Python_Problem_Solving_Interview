@@ -19,7 +19,7 @@ class linked_list:
         next_node=None
         prev_node=None
         cur_node=self.head.next
-        while cur_node:
+        while (cur_node!=None):
             next_node=cur_node.next
             cur_node.next=prev_node
             prev_node=cur_node
