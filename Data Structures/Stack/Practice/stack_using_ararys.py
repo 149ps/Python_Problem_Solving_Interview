@@ -1,3 +1,4 @@
+MAX=4
 class stack:
     
     def __init__(self):
@@ -7,8 +8,7 @@ class stack:
         return len(self.s)==0
     
     def push(self,item):
-        MAX=4
-        if len(self.s)==MAX:
+        if len(self.s)==4:
             raise Exception("Stack Overflow")
         else:
             self.s.append(item)
@@ -26,8 +26,6 @@ class stack:
 s=stack()
 s.push(1)
 s.push(2)
+s.push(5)
 print(s.push(4))
-print(s.pop())
-
-        
-        
+print(s.push(10))
