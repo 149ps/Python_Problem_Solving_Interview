@@ -26,6 +26,8 @@ class stack:
     
     def isempty(self):
         if self.head.next==None: return True
+        else:
+            return False
     
     def display(self):
         elements=[]
@@ -42,7 +44,7 @@ s.push(2)
 s.push(5)
 s.pop()
 s.display()
-s.isempty()
+print(s.isempty())
 
     
     
