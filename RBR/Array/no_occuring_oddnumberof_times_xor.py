@@ -4,5 +4,5 @@ def OddnumberofTimes(nums):
         result=result^i
     return result
 
-nums=[3,2,1,2,3,1,1]
+nums=[3,2,1,2,3,1,61]
 print(OddnumberofTimes(nums))
